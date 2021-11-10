@@ -44,6 +44,7 @@ describe('index.js', function () {
       const fareQuintupler = createFareMultiplier(5);
 
       expect(fareQuintupler(5)).to.eql(25);
+      expect(createFareMultiplier(5)(5)).to.eql(25);
     });
   });
 
